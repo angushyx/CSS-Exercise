@@ -5,25 +5,32 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheet.css">
+  <link rel="stylesheet" href="/我的/stylesheet.css">
   <title> 電商切版 </title>
 </head>
 
 <body>
-  <header>
-    <nav>
 
+
+  <header>
+    <nav class="nav">
+      <label class="navbar-toggle-label hamburger" for="navbar-toggle"></label>
       <div class="logo-brand">
-        <img src="/image/logo-2021.png" class="logo">
+        <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14985/logo-2021.png" class="logo">
         <div class="brand">TSHIRT STORE</div>
       </div>
-
-      <ul class="nav-list">
-        <li class="list man" id='list'>MAN</li>
-        <li class="list woman">WOMAN</li>
-        <li class="list kid">KID</li>
+      <input type="checkbox" id="navbar-toggle" />
+      <ul class="list-group">
+        <li class="list-item">Men
+          <i class="fas fa-angle-down fa-1x"></i>
+        </li>
+        <li class="list-item">Women
+          <i class="fas fa-angle-down fa-1x"> </i>
+        </li>
+        <li class="list-item">Kids
+          <i></i>
+        </li>
       </ul>
-
       <div class="navbar-tools">
         <a href="#" class="search-btn">
           <i class="fas fa-search"></i>
@@ -35,94 +42,185 @@
           <i class="fas fa-shopping-bag"></i>
         </a>
       </div>
-
-
     </nav>
   </header>
 
 
-  <!-- select -->
-
   <div class="main-container">
-    <h2 class="category-title">Basic T-shirts</h2>
-    <div class="exhibition-container">
-      <select name="" id="" class="category-select" id="size-select">
-        <option>size</option>
-        <option>XS</option>
-        <option>S</option>
-        <option>M</option>
-        <option>L</option>
-      </select>
-      <select name="" id="" class="category-select" id="color-select">
-        <option>color</option>
-        <option>black</option>
-        <option>white</option>
-      </select>
-      <select name="" id="" class="category-select" id="sort-select">
-        <option>sort</option>
-        <option>12</option>
-        <option>159</option>
-      </select>
-    </div>
+    <!-- select -->
+    <section class="select container" id='select'>
+      <h2 class="category-title">Basic T-shirts</h2>
+      <div class="select-wrapper">
+        <select name="size" class="select-item">
+          <option>size</option>
+          <option>XS</option>
+        </select>
+        <select name="color" class="select-item">
+          <option>color</option>
+          <option>black</option>
+        </select>
+        <select name="sort" class="select-item ">
+          <option>sort</option>
+          <option>12</option>
+        </select>
+    </section>
+
 
     <!-- card -->
-    <div class="card-container">
-      <div class="card">
-        <img src="/image/t-shirt.png" class="card-image" alt="">
-        <i class="fab fa-gratipay"></i>
-        <div class="item-name">T-shirt-black</div>
-        <div class="item-price">29.00 USD</div>
-      </div>
-      <div class="card">
-        <img src="/image/t-shirt.png" class="card-image" alt="">
-        <i class="fab fa-gratipay"></i>
-        <div class="item-name">T-shirt-black</div>
-        <div class="item-price">29.00 USD</div>
-      </div>
-      <div class="card">
-        <img src="/image/t-shirt.png" class="card-image" alt="">
-        <i class="fab fa-gratipay"></i>
-        <div class="item-name">T-shirt-black</div>
-        <div class="item-price">29.00 USD</div>
-      </div>
-      <div class="card">
-        <img src="/image/t-shirt.png" class="card-image" alt="">
-        <i class="fab fa-gratipay"></i>
-        <div class="item-name">T-shirt-black</div>
-        <div class="item-price">29.00 USD</div>
-      </div>
-      <div class="card">
-        <img src="/image/t-shirt.png" class="card-image" alt="">
-        <i class="fab fa-gratipay"></i>
-        <div class="item-name">T-shirt-black</div>
-        <div class="item-price">29.00 USD</div>
-      </div>
-    </div>
-    <!-- pagination -->
-    <div class="pagination">
-      <span>20</span>
-      /
-      <span>20</span>
-    </div>
-    <form name="newLetter" post="" action="">
-      <div class="newLetter">
-        <!-- <div class="newLetterimage"><img src="/image/template.png" alt=""></div> -->
-        <h5>
-          <label class="footerNewLetter" for="footerNewLetter--black">Get the latest T-shirt drops in your inbox! Sign
-            up for our
-            Newsletter.</label>
-        </h5>
-        <div class="inputBtn">
-          <input type="email" id="footer_newsletter_email" placeholder="Enter email for news updates">
-          <button>SING UP!</button>
-        </div>
-        <div class="newLetterTerms">By registering you agree with our
-          <a href="https://www.tshirtstoreonline.com/en/integrity-policy">Integrity Policy</a>
-        </div>
-      </div>
-    </form>
-  </div>
+    <section class="product-cards container">
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
 
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14362/t-shirt.png" class="cover-img"
+              alt="">
+            <img
+              src="https://assets-lighthouse.alphacamp.co/uploads/image/file/14373/christian-bolt-VW5VjskNXZ8-unsplash.png"
+              class="shirt-img" alt="">
+          </div>
+
+          <div class="card-info">
+            <i class="fab fa-gratipay"></i>
+            <div class="item-name">T-shirt-black</div>
+            <div class="item-price">29.00 USD</div>
+          </div>
+        </div>
+      </div>
+      <!-- pagination -->
+      <div class="pagination">
+        <span>20</span>
+        /
+        <span>20</span>
+      </div>
+  </div>
+  </section>
+
+
+
+  <!-- subscription -->
+  <section id="subscription">
+    <div class="sub-wrapper">
+      <div class="sub-title">
+        <p class="subscript-title">
+          Get the latest T-shirt drops in your inbox! Sign up for our
+          Newsletter.
+        </p>
+      </div>
+      <form class="subscript">
+        <input type="email" placeholder="Enter email for news updates" name="subscript">
+        <button type="submit">SIGN UP!</button>
+        <p class="subscript-policy">
+          By registering you agree with our <a href="">Integrity Policy</a>
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
   <footer>
     <div class="footer">© 2021 Tshirt Store. All rights reserved.</div>
   </footer>
